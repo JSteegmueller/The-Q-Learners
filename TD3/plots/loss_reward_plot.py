@@ -1,6 +1,4 @@
-import json
 import pickle
-from numbers import Number
 
 import numpy as np
 import pylab as plt
@@ -51,17 +49,17 @@ def plot_q1_loss(file, q_fig, act_fig, reward_fig, win_fig):
     q_fig.fill_between(np.arange(len(running_mean(min_q_loss, 1000))), running_mean(min_q_loss, 1000),
                         running_mean(max_q_loss, 1000),
                         alpha=0.5)
-    q_fig.plot(running_mean(mean_q_loss, 1000), label=f"Q1 loss {changed_value}")
+    q_fig.plot(running_mean(mean_q_loss, 1000), label=f"Q1 loss")
 
     act_fig.fill_between(np.arange(len(running_mean(min_actor_loss, 1000))), running_mean(min_actor_loss, 1000),
                           running_mean(max_actor_loss, 1000),
                           alpha=0.5)
-    act_fig.plot(running_mean(mean_actor_loss, 1000), label=f"Actor loss {changed_value}")
+    act_fig.plot(running_mean(mean_actor_loss, 1000), label=f"Actor loss")
 
     reward_fig.fill_between(np.arange(len(running_mean(min_reward, 1000))), running_mean(min_reward, 1000),
                              running_mean(max_reward, 1000),
                              alpha=0.5)
-    reward_fig.plot(running_mean(mean_reward, 1000), label=f"Reward {changed_value}")
+    reward_fig.plot(running_mean(mean_reward, 1000), label=f"Reward")
 
     if hasattr(run_infos[0], 'win_percentages'):
         win_fig.fill_between(np.arange(len(running_mean(min_win, 10))), running_mean(min_win, 10),
@@ -69,19 +67,18 @@ def plot_q1_loss(file, q_fig, act_fig, reward_fig, win_fig):
                              alpha=0.1)
         win_fig.plot(running_mean(mean_win, 10), label=f"TD3")
 
-gym_name = 'Hockey-v0'
-test_name = 'normal1'
-_, q_loss = plt.subplots()
-_, actor_loss = plt.subplots()
-_, reward = plt.subplots()
-_, win = plt.subplots()
-win.set_xlabel('Episode / 50')
-win.set_ylabel('Win rate %')
-for i in range(1, 1 + 1):
-    plot_q1_loss(f'../results/TD3_{gym_name}_{test_name}_{i}', _, _, _, win)
-q_loss.legend()
-actor_loss.legend()
-reward.legend()
-win.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
-plt.tight_layout()
-plt.show()
+
+def plot_loss_reward(file):
+    _, q_loss = plt.subplots()
+    _, actor_loss = plt.subplots()
+    _, reward = plt.subplots()
+    _, win = plt.subplots()
+    win.set_xlabel('Episode / 50')
+    win.set_ylabel('Win rate %')
+    plot_q1_loss(file, q_loss, actor_loss, reward, win)
+    q_loss.legend()
+    actor_loss.legend()
+    reward.legend()
+    win.legend(bbox_to_anchor=(1.05, 1.0), loc='upper left')
+    plt.tight_layout()
+    plt.show()
