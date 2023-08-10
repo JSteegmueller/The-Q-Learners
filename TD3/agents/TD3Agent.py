@@ -8,12 +8,12 @@ from gymnasium.core import ObsType
 from numpy import ndarray, number
 from torch import Tensor
 
-from TD3.HyperHyper import AgentParams, torch_device
-from TD3.helper.Memory import Memory
-from TD3.helper.UnsupportedSpace import UnsupportedSpace
-from TD3.helper.Util import soft_update_params
-from TD3.neural_nets.PolicyFunction import PolicyFunction
-from TD3.neural_nets.QFunction import DQFunction
+from HyperHyper import AgentParams, torch_device
+from helper.Memory import Memory
+from helper.UnsupportedSpace import UnsupportedSpace
+from helper.Util import soft_update_params
+from neural_nets.PolicyFunction import PolicyFunction
+from neural_nets.QFunction import DQFunction
 
 
 # import glfw

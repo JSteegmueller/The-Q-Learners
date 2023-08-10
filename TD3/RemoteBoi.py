@@ -4,10 +4,10 @@ import laserhockey.hockey_env as h_env
 import numpy as np
 import torch
 
-from TD3.RL2023HockeyTournamentClient.client.backend import Client
-from TD3.RL2023HockeyTournamentClient.client.remoteControllerInterface import RemoteControllerInterface
-from TD3.agents.TD3Agent import TD3Agent
-from TD3.helper.Logger import RunInfo
+from RL2023HockeyTournamentClient.client.backend import Client
+from RL2023HockeyTournamentClient.client.remoteControllerInterface import RemoteControllerInterface
+from agents.TD3Agent import TD3Agent
+from helper.Logger import RunInfo
 
 
 class RemoteBasicOpponent(RemoteControllerInterface):

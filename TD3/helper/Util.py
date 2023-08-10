@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from TD3.HyperHyper import torch_device
+from HyperHyper import torch_device
 
 
 def to_torch(x):

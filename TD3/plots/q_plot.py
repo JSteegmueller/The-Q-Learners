@@ -6,9 +6,9 @@ import numpy as np
 import torch
 from matplotlib import pyplot as plt
 
-from TD3.agents.TD3Agent import TD3Agent
-from TD3.helper.Logger import RunInfo
-from TD3.helper.Util import to_torch
+from agents.TD3Agent import TD3Agent
+from helper.Logger import RunInfo
+from helper.Util import to_torch
 
 
 def plot_q_function(q_function, observations, actions, wins):

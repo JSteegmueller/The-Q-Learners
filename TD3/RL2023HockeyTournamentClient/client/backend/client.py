@@ -6,7 +6,7 @@ import laserhockey
 import numpy as np
 from twisted.internet import reactor, task
 
-from TD3.RL2023HockeyTournamentClient.client.remoteControllerInterface import RemoteControllerInterface
+from RL2023HockeyTournamentClient.client.remoteControllerInterface import RemoteControllerInterface
 from .game import Game
 from .network_interface import NetworkInterface, NetworkInterfaceConnectionError
 

@@ -4,7 +4,7 @@ import time
 import numpy as np
 import torch
 
-from TD3.HyperHyper import HyperParams
+from HyperHyper import HyperParams
 
 
 class Logger:

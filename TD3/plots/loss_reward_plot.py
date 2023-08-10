@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import pylab as plt
 
-from TD3.helper.Logger import RunInfo
+from helper.Logger import RunInfo
 
 
 def running_mean(x, N):

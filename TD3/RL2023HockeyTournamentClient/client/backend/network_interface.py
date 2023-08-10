@@ -4,7 +4,7 @@ from twisted.cred import credentials, error as cred_error
 from twisted.internet import reactor, defer
 from twisted.spread import pb
 
-from TD3.RL2023HockeyTournamentClient.common.error import ServerClientVersionMissmatchError
+from RL2023HockeyTournamentClient.common.error import ServerClientVersionMissmatchError
 
 
 class NotConnectedError(Exception):

@@ -3,10 +3,10 @@ from typing import Dict, Tuple
 import laserhockey.hockey_env as h_env
 
 from HyperHyper import HyperParams, GymParams
-from TD3.agents.TD3Agent import TD3Agent
-from TD3.helper.Logger import Logger
-from TD3.helper.Memory import Memory
-from TD3.loops.train import train
+from agents.TD3Agent import TD3Agent
+from helper.Logger import Logger
+from helper.Memory import Memory
+from loops.train import train
 from experiments import hy_update_every, hy_learning_rate, hy_hidden_size, hy_tau, hy_discount, hy_noise, \
     hy_random_timesteps, hy_buffer_threshold
 

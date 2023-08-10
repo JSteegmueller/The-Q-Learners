@@ -1,7 +1,7 @@
 import numpy as np
 
-from TD3.agents.TD3Agent import TD3Agent
-from TD3.helper.Logger import Logger
+from agents.TD3Agent import TD3Agent
+from helper.Logger import Logger
 
 
 def train(agent: TD3Agent, env, logger: Logger, episodes, random_timesteps, num_train):
