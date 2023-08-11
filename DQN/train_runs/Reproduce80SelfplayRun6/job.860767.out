@@ -1,0 +1,9 @@
+~~~ Starting Training ~~~
+Ep.:     0, Score:  -2.88, P_win: 0.03, Tran: 87.44, eps: 0.20, lr: 2.00e-04, pred: 16010.90 min
+Ep.:   500, Score:  -7.14, P_win: 0.10, Tran: 72.87, eps: 0.20, lr: 2.00e-04, pred: 592.56 min
+Ep.:  1000, Score:  -6.60, P_win: 0.12, Tran: 72.99, eps: 0.19, lr: 2.00e-04, pred: 559.19 min
+Ep.:  1500, Score:  -5.40, P_win: 0.19, Tran: 72.16, eps: 0.19, lr: 2.00e-04, pred: 546.93 min
+Ep.:  2000, Score:  -5.23, P_win: 0.14, Tran: 76.29, eps: 0.18, lr: 2.00e-04, pred: 535.88 min
+Ep.:  2500, Score:  -5.17, P_win: 0.16, Tran: 75.45, eps: 0.18, lr: 2.00e-04, pred: 537.76 min
+Ep.:  3000, Score:  -4.79, P_win: 0.22, Tran: 70.51, eps: 0.17, lr: 2.00e-04, pred: 543.38 min
+Ep.:  3500, Score:  -4.82, P_win: 0.13, Tran: 79.60, eps: 0.17, lr: 2.00e-04, pred: 549.85 min

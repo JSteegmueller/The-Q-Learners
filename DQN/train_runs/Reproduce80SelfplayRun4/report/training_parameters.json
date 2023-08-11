@@ -1,0 +1,6 @@
+{
+    "num_episodes": "100000",
+    "checkpoint_interval": "500",
+    "q_target_update_interval": "50",
+    "num_testing_episodes": "100"
+}

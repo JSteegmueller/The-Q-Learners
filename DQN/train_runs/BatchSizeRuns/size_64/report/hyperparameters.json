@@ -1,0 +1,19 @@
+{
+    "seed": "42",
+    "max_transitions": "100",
+    "mode": "0",
+    "gamma": "0.99",
+    "feature_space_dim": "1024",
+    "segment_width": "1024",
+    "segment_depth": "2",
+    "activation_function": "ReLU()",
+    "loss_function": "SmoothL1Loss()",
+    "optimizer": "<class 'torch.optim.adam.Adam'>",
+    "learning_rate": "0.0002",
+    "learning_rate_halving_episodes": "[15000, 25000]",
+    "optimization_steps": "10",
+    "batch_size": "64",
+    "device": "cpu",
+    "epsilon0": "0.2",
+    "eps_decay": "0.99995"
+}
